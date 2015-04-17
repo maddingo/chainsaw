@@ -15,10 +15,6 @@
  * limitations under the License.
  */
 
-/*
- * @author Paul Smith <psmith@apache.org>
- *
- */
 package org.apache.log4j.chainsaw.icons;
 
 import java.net.URL;
@@ -28,7 +24,7 @@ import javax.swing.ImageIcon;
 
 
 /**
- * @author Paul Smith <psmith@apache.org>
+ * @author Paul Smith &lt;psmith@apache.org&gt;
  *
  */
 public class ChainsawIcons {

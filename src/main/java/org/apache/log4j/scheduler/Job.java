@@ -19,11 +19,12 @@ package org.apache.log4j.scheduler;
 
 
 /**
- * Job is a very simple interface. It only has a single method {@link #execute}
+ * <p>Job is a very simple interface. It only has a single method {@link #execute}
  * which is called by the {@link Scheduler} when a task is ready for execution.
- * <p/>
- * It is assumed that the execution context
+ * </p>
+ * <p>It is assumed that the execution context
  * are contained within the implementing
+ * </p>
  * {@link Job} itself.
  *
  * @author Ceki G&uuml;lc&uuml;

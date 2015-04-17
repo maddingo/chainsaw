@@ -25,15 +25,14 @@ import java.awt.Container;
  * For example, VFSLogFilePatternReceiver provides an optional 'promptForUserInfo', that
  * when set to true, will allow a login dialog to be displayed on top of the Chainsaw window.
  * 
- * @author Scott Deboy<sdeboy@apache.org>
+ * @author Scott Deboy &lt;sdeboy@apache.org&gt;
  *
  */
 
 public interface VisualReceiver {
+	
 	/**
 	 * Provides access to a container.
-	 * 
-	 * @param container
 	 */
 	void setContainer(Container container);
 }

@@ -26,17 +26,18 @@ import java.beans.PropertyChangeSupport;
 
 
 /**
- * A convienent abstract class for plugin subclasses that implements
+ * <p>A convienent abstract class for plugin subclasses that implements
  * the basic methods of the Plugin interface. Subclasses are required
  * to implement the isActive(), activateOptions(), and shutdown()
  * methods.
- * <p/>
+ * </p>
  * <p>Developers are not required to subclass PluginSkeleton to
  * develop their own plugins (they are only required to implement the
  * Plugin interface), but it provides a convenient base class to start
  * from.
- * <p/>
- * Contributors: Nicko Cadell
+ * </p>
+ * <p>Contributors: Nicko Cadell
+ * </p>
  *
  * @author Mark Womack (mwomack@apache.org)
  * @author Paul Smith (psmith@apache.org)

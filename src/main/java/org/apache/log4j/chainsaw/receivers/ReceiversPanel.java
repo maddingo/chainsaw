@@ -89,8 +89,8 @@ import org.apache.log4j.spi.LoggerRepositoryEx;
  * This panel is used to manage all the Receivers configured within Log4j
  *
  *
- * @author Paul Smith <psmith@apache.org>
- * @author Scott Deboy <sdeboy@apache.org>
+ * @author Paul Smith &lt;psmith@apache.org&gt;
+ * @author Scott Deboy &lt;sdeboy@apache.org&gt;
  */
 public class ReceiversPanel extends JPanel implements SettingsListener {
   final Action newReceiverButtonAction;

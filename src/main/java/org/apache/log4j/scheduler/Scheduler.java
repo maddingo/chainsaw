@@ -21,12 +21,13 @@ import java.util.List;
 import java.util.Vector;
 
 /**
- * A simple but still useful implementation of a Scheduler (in memory only).
- * <p/>
- * This implementation will work very well when the number of scheduled job is
+ * <p>A simple but still useful implementation of a Scheduler (in memory only).
+ * </p>
+ * <p>This implementation will work very well when the number of scheduled job is
  * small, say less than 100 jobs. If a larger number of events need to be
  * scheduled, than a better adapted data structure for the jobList can give
  * improved performance.
+ * </p>
  *
  * @author Ceki
  */
@@ -116,11 +117,12 @@ public class Scheduler extends Thread {
     }
 
     /**
-     * Schedule a {@link Job} for execution at system time given by
+     * <p>Schedule a {@link Job} for execution at system time given by
      * the <code>desiredTime</code> parameter.
-     * <p/>
-     * The job will be rescheduled. It will execute with a frequency determined
+     * </p>
+     * <p>The job will be rescheduled. It will execute with a frequency determined
      * by the period parameter.
+     * </p>
      * @param job job to schedule.
      * @param desiredTime desired time of execution.
      * @param period repeat period.
@@ -132,11 +134,12 @@ public class Scheduler extends Thread {
     }
 
     /**
-     * Change the period of a job. The original job must exist for its period
+     * <p>Change the period of a job. The original job must exist for its period
      * to be changed.
-     * <p/>
-     * The method returns true if the period could be changed, and false
+     * </p>
+     * <p>The method returns true if the period could be changed, and false
      * otherwise.
+     * </p>
      * @param job job.
      * @param newPeriod new repeat period.
      * @return true if period could be changed.

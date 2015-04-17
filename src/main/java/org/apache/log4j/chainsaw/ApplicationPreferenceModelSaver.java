@@ -44,9 +44,6 @@ public class ApplicationPreferenceModelSaver implements SettingsListener {
 
     private final ApplicationPreferenceModel model;
     
-    /**
-     * @param model
-     */
     public ApplicationPreferenceModelSaver(final ApplicationPreferenceModel model) {
         this.model = model;
     }

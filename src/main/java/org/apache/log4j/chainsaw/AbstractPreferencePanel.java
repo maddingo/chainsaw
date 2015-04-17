@@ -61,7 +61,7 @@ import org.apache.log4j.chainsaw.icons.ChainsawIcons;
  * used as the title of the preference panel
  * </ul>
  * 
- * @author Paul Smith <psmith@apache.org>
+ * @author Paul Smith &lt;psmith@apache.org&gt;
  *
  */
 public abstract class AbstractPreferencePanel extends JPanel
@@ -148,9 +148,8 @@ public abstract class AbstractPreferencePanel extends JPanel
   /**
    * Ensures a specific panel is displayed in the spot where
    * preferences can be selected.
-   *
-  * @param panel
-  */
+   * @param panel parent panel
+   */
   protected void setDisplayedPrefPanel(JComponent panel)
   {
     if (currentlyDisplayedPanel != null) {

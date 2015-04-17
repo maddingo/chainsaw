@@ -161,13 +161,14 @@ public class ChainsawAppender
   /**
    * The <b>Application</b> option takes a string value which should be the
    * name of the application getting logged
+   * @param lapp lapp
    */
   public void setApplication(String lapp) {
     this.application = lapp;
   }
 
   /**
-   *  Returns value of the <b>Application</b> option.
+   *  @return  value of the <b>Application</b> option.
    */
   public String getApplication() {
     return application;

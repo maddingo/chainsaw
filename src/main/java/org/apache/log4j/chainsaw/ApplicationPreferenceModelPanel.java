@@ -65,7 +65,7 @@ import org.apache.log4j.chainsaw.osx.OSXIntegration;
 /**
  * A panel used by the user to modify any application-wide preferences.
  *
- * @author Paul Smith <psmith@apache.org>
+ * @author Paul Smith &lt;psmith@apache.org&gt;
  *
  */
 public class ApplicationPreferenceModelPanel extends AbstractPreferencePanel {
@@ -205,9 +205,6 @@ public static void main(String[] args) {
       setupInitialValues();
     }
 
-    /**
-     *
-     */
     private void setupListeners() {
       topPlacement.addActionListener(
         new ActionListener() {
@@ -300,9 +297,6 @@ public static void main(String[] args) {
         });
     }
 
-    /**
-     *
-     */
     private void setupComponents() {
       setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 

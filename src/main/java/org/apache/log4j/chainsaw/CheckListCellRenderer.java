@@ -42,18 +42,12 @@ public abstract class CheckListCellRenderer extends JCheckBox
   private final Border noFocusBorder =
     BorderFactory.createEmptyBorder(1, 1, 1, 1);
 
-  /**
-   *
-   */
   public CheckListCellRenderer() {
     super();
     setOpaque(true);
     setBorder(noFocusBorder);
   }
 
-  /* (non-Javadoc)
-   * @see javax.swing.ListCellRenderer#getListCellRendererComponent(javax.swing.JList, java.lang.Object, int, boolean, boolean)
-   */
   public Component getListCellRendererComponent(
     JList list, Object value, int index, boolean isSelected,
     boolean cellHasFocus) {
@@ -71,9 +65,5 @@ public abstract class CheckListCellRenderer extends JCheckBox
     return this;
   }
 
-/**
- * @param value
- * @return selected flag
- */
-protected abstract boolean isSelected(Object value);
+  protected abstract boolean isSelected(Object value);
 }

@@ -54,7 +54,7 @@ import java.io.IOException;
  * 
  * <p>See also the Ant build file in the tests/ directory.</p> 
  * 
- * @author Ceki G&uuml;lc&uuml
+ * @author Ceki G&uuml;lc&uuml;
  */
 public class FullCycleDBTest
        extends TestCase {
@@ -147,7 +147,6 @@ public class FullCycleDBTest
    * and then reads it back using DBReceiver.
    * 
    * DB related information is specified within the configuration files.
-   * @throws Exception
    */
   public void testSingleOutput()
          throws Exception {
@@ -183,7 +182,6 @@ public class FullCycleDBTest
    * exception info.
    * 
    * DB related information is specified within the configuration files.
-   * @throws Exception
    */
   public void testAllFields() throws IOException {
     DOMConfigurator jc1 = new DOMConfigurator();

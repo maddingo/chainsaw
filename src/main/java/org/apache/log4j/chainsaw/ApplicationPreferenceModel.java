@@ -28,7 +28,7 @@ import javax.swing.UIManager;
 /**
  * Encapsulates the Chainsaw Application wide properties
  *
- * @author Paul Smith <psmith@apache.org>
+ * @author Paul Smith &lt;psmith@apache.org&gt;
  *
  */
 public class ApplicationPreferenceModel {
@@ -77,27 +77,15 @@ public class ApplicationPreferenceModel {
     private boolean defaultColumnsSet;
     private boolean bypassSearchColors = false;
 
-  /**
-     * @param listener
-     */
     public void addPropertyChangeListener(PropertyChangeListener listener) {
         propertySupport.addPropertyChangeListener(listener);
     }
 
-    /**
-     * @param propertyName
-     * @param listener
-     */
     public void addPropertyChangeListener(String propertyName,
         PropertyChangeListener listener) {
         propertySupport.addPropertyChangeListener(propertyName, listener);
     }
 
-    /**
-     * @param propertyName
-     * @param oldValue
-     * @param newValue
-     */
     private void firePropertyChange(String propertyName, boolean oldValue,
         boolean newValue) {
         propertySupport.firePropertyChange(propertyName, oldValue, newValue);
@@ -113,34 +101,19 @@ public class ApplicationPreferenceModel {
         propertySupport.firePropertyChange(propertyName, oldValue, newValue);
     }
 
-    /**
-     * @param propertyName
-     * @param oldValue
-     * @param newValue
-     */
     private void firePropertyChange(String propertyName, Object oldValue,
         Object newValue) {
         propertySupport.firePropertyChange(propertyName, oldValue, newValue);
     }
 
-    /**
-     * @param propertyName
-     * @return listeners flag
-     */
     public boolean hasListeners(String propertyName) {
         return propertySupport.hasListeners(propertyName);
     }
 
-    /**
-     * @param listener
-     */
     public void removePropertyChangeListener(PropertyChangeListener listener) {
         propertySupport.removePropertyChangeListener(listener);
     }
 
-    /**
-     * @return Returns the showNoReceiverWarning.
-     */
     public final boolean isShowNoReceiverWarning() {
 
         return showNoReceiverWarning;
@@ -188,7 +161,7 @@ public class ApplicationPreferenceModel {
 
     /**
      * Takes another model and copies all the values into this model
-     * @param model
+     * @param model model
      */
     public void apply(ApplicationPreferenceModel model)
     {
@@ -276,7 +249,7 @@ public class ApplicationPreferenceModel {
     }
 
     /**
-     * @param i
+     * @param i index
      */
     public void setTabPlacement(int i) {
       int oldValue = this.tabPlacement;

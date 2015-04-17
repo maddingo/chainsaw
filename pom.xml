@@ -99,6 +99,15 @@
     <url>http://www.apache.org</url>
   </organization>
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.10.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.rat</groupId>
@@ -269,6 +278,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <configuration>
           <encoding>UTF-8</encoding>
+          <failOnError>false</failOnError>
         </configuration>
         <executions>
           <execution>
@@ -478,11 +488,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.7</version>
       </plugin>
     </plugins>
   </reporting>
-    <distributionManagement>
+  <distributionManagement>
     <repository>
       <id>logging.repo</id>
       <url>scp://people.apache.org/www/people.apache.org/builds/logging/repo/</url>
@@ -494,6 +503,7 @@
   </distributionManagement>
   <properties>
     <chainsaw.mainclass>org.apache.log4j.chainsaw.LogUI</chainsaw.mainclass>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>
 

@@ -39,8 +39,8 @@ import org.apache.log4j.spi.LoggingEventFieldResolver;
  * bound into the Log4j appender framework, and queues events, to be later
  * dispatched to registered/interested parties.
  * 
- * @author Scott Deboy <sdeboy@apache.org>
- * @author Paul Smith <psmith@apache.org>
+ * @author Scott Deboy &lt;sdeboy@apache.org&gt;
+ * @author Paul Smith &lt;psmith@apache.org&gt;
  * 
  */
 public class ChainsawAppenderHandler extends AppenderSkeleton {
@@ -121,7 +121,7 @@ public class ChainsawAppenderHandler extends AppenderSkeleton {
    * Determines an appropriate title for the Tab for the Tab Pane by locating a
    * the hostname property
    * 
-   * @param e
+   * @param e event
    * @return identifier
    */
   String getTabIdentifier(LoggingEvent e) {
@@ -129,11 +129,6 @@ public class ChainsawAppenderHandler extends AppenderSkeleton {
     return ((ident != null) ? ident : DEFAULT_IDENTIFIER);
   }
 
-  /**
-   * A little test bed
-   * 
-   * @param args
-   */
   public static void main(String[] args) throws InterruptedException {
     ChainsawAppenderHandler handler = new ChainsawAppenderHandler();
     handler.addEventBatchListener(new EventBatchListener() {
@@ -166,9 +161,6 @@ public class ChainsawAppenderHandler extends AppenderSkeleton {
     return dataRate;
   }
 
-  /**
-   * @param dataRate
-   */
   void setDataRate(double dataRate) {
     double oldValue = this.dataRate;
     this.dataRate = dataRate;
@@ -176,35 +168,21 @@ public class ChainsawAppenderHandler extends AppenderSkeleton {
         new Double(this.dataRate));
   }
 
-  /**
-   * @param listener
-   */
   public synchronized void addPropertyChangeListener(
       PropertyChangeListener listener) {
     propertySupport.addPropertyChangeListener(listener);
   }
 
-  /**
-   * @param propertyName
-   * @param listener
-   */
   public synchronized void addPropertyChangeListener(String propertyName,
       PropertyChangeListener listener) {
     propertySupport.addPropertyChangeListener(propertyName, listener);
   }
 
-  /**
-   * @param listener
-   */
   public synchronized void removePropertyChangeListener(
       PropertyChangeListener listener) {
     propertySupport.removePropertyChangeListener(listener);
   }
 
-  /**
-   * @param propertyName
-   * @param listener
-   */
   public synchronized void removePropertyChangeListener(String propertyName,
       PropertyChangeListener listener) {
     propertySupport.removePropertyChangeListener(propertyName, listener);
@@ -325,7 +303,7 @@ public class ChainsawAppenderHandler extends AppenderSkeleton {
        * iterating over each identifier and dispatching the
        * ChainsawEventBatchEntry object to each listener that is interested.
        * 
-       * @param eventBatch
+       * @param eventBatch event batch
        */
       private void dispatchEventBatch(ChainsawEventBatch eventBatch) {
         EventBatchListener[] listeners = (EventBatchListener[]) listenerList

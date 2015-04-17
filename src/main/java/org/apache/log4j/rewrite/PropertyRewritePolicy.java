@@ -42,9 +42,7 @@ public class PropertyRewritePolicy implements RewritePolicy {
     /**
      * Set a string representing the property name/value pairs.
      * 
-     * Form: propname1=propvalue1,propname2=propvalue2
-     * 
-     * @param props
+     * @param props properties of the form propname1=propvalue1,propname2=propvalue2 
      */
     public void setProperties(String props) {
         Map hashTable = new HashMap();
